@@ -1,0 +1,52 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Defect Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="{{ url_for('home') }}">Cloth Defect Detection</a>
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('contact') }}">Contact Us</a>
+            <a href="{{ url_for('feedback') }}">Feedback</a>
+            
+            <!-- Conditional Links: Login/Sign-Up or Logout and Upload -->
+            {% if 'email' in session %}
+                <a href="{{ url_for('logout') }}">Logout</a>
+                <a href="{{ url_for('home') }}#upload">Upload Image</a>  <!-- Link to upload section -->
+            {% else %}
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('signup') }}">Sign Up</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul class="flashes">
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Cloth Defect Detection. All rights reserved.
+    </footer>
+</body>
+</html>

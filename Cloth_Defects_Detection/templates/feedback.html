@@ -1,0 +1,16 @@
+<!-- templates/feedback.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<section id="feedback">
+    <h2>Feedback</h2>
+    <div class="content-box">
+        <form id="feedbackForm" method="POST" action="{{ url_for('feedback') }}">
+            <input type="text" id="fName" name="fName" placeholder="Your Name" required>
+            <input type="email" id="fEmail" name="fEmail" placeholder="Your Email" required>
+            <textarea id="fFeedback" name="fFeedback" rows="5" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<section id="home">
+    <h1>Welcome to Cloth Defect Detection</h1>
+    <div class="upload-container">
+        <h2>Upload Your Cloth Image</h2>
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Detect Defect</button>
+        </form>
+        {% if filename %}
+            <div class="result">
+                <h3>Uploaded Image:</h3>
+                <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image" class="uploaded-image">
+                <h3>Result: <span class="{{ 'defective' if result == 'Defective' else 'non-defective' }}">{{ result }}</span></h3>
+            </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
