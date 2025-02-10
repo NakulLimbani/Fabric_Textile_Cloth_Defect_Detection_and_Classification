@@ -36,7 +36,7 @@ This project automates **fabric defect detection** using **machine learning** an
 3️⃣ **Web Interface**:
    - Upload images for prediction.
    - View results dynamically.
-   - Log in for personalized access.
+   - Log in for personalized access.  
 4️⃣ **Feedback and Contact Forms** – Allows users to provide feedback and inquiries.
 
 ---
