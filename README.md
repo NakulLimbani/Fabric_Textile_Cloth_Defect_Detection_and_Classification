@@ -21,14 +21,12 @@ This project automates **fabric defect detection** using **machine learning** an
 ## **🛠️ Tech Stack**
 | Technology  | Purpose |
 |-------------|----------------|
-| **Python** | Backend Development |
+| **Python** | Core and Backend Development |
 | **Flask** | Web Framework |
 | **SQLite** | Database for User Authentication |
 | **TensorFlow/Keras** | Deep Learning Models |
 | **Pandas, NumPy** | Data Handling & Preprocessing |
-| **Jinja2** | HTML Templating |
 | **CSS** | Frontend Styling |
-| **Werkzeug** | Secure File Upload |
 
 ---
 
@@ -38,7 +36,7 @@ This project automates **fabric defect detection** using **machine learning** an
 3️⃣ **Web Interface**:
    - Upload images for prediction.
    - View results dynamically.
-   - Log in for personalized access.  
+   - Log in for personalized access.
 4️⃣ **Feedback and Contact Forms** – Allows users to provide feedback and inquiries.
 
 ---
