@@ -1,126 +1,98 @@
 # Fabric_Textile_Cloth_Defect_Detection_and_Classification
 
 ### **🧵 Fabric Textile Cloth Defect Detection & Classification 🚀**  
-**🔍 AI-Powered Defect Detection | 🏆 Machine Learning & Deep Learning | 📊 Data Science | 👕 Textile Industry Innovation**
-
-<p align="center">
-  <img src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" width="600"/>
-</p>
+**🔍 AI-Powered Defect Detection | AI-Powered Textile Quality Control | 🏆 Machine Learning & Deep Learning | Flask Web App | 📊 Data Science | 👕 Textile Industry Innovation**
 
 A deep learning-based system for detecting and classifying defects in fabric, textile, and cloth materials using computer vision.
 
 ---
 
-## **✨ About the Project**
-In the textile industry, detecting fabric defects is **crucial** for maintaining quality. This project leverages **machine learning** and **deep learning** techniques to **automate cloth defect detection** and **classification**. 🏭🔬
+## **📌 Project Overview**
+This project automates **fabric defect detection** using **machine learning** and provides a user-friendly web interface for real-time predictions. It enhances **quality control** in the textile industry by integrating advanced AI models with an interactive website.
 
-👀 **What this project does?**
-- ✅ Detects **defects** in textile and fabric images.
-- ✅ Classifies defects using **Logistic Regression & CNN models**.
-- ✅ Provides **real-time insights** for textile quality control.
-- ✅ Uses **linear & multivariate regression** to analyze defect patterns.
-
-🔥 **Why this project?**
-- Reduces **manual labor** in defect detection.  
-- Saves **time & cost** for textile manufacturers.  
-- Improves **fabric quality & precision**.  
+### **Key Features:**
+✅ Detects and classifies **fabric defects** using deep learning models.  
+✅ Provides a **web interface** for uploading fabric images and viewing results.  
+✅ Includes **user authentication** for secure access.  
+✅ Offers **dynamic pages** for contact, feedback, and project information.
 
 ---
 
-## **📸 Demo Output**
-<p align="center">
-  <img src="https://media.giphy.com/media/J1XEX6eKOJ84l2e0XL/giphy.gif" width="600"/>
-</p>
-
----
-
-## **🛠️ Tech Stack & Tools**
-| Technology  | Used For |
+## **🛠️ Tech Stack**
+| Technology  | Purpose |
 |-------------|----------------|
-| 🐍 Python | Core Programming |
-| 📊 Pandas, NumPy | Data Handling & Processing |
-| 📉 Matplotlib, Seaborn | Data Visualization |
-| 🤖 Scikit-Learn | Machine Learning Models |
-| 🔥 TensorFlow/Keras | Deep Learning (CNN) |
-| 🏗️ OpenCV | Image Processing |
-| 📝 Jupyter Notebook | Interactive Coding |
+| **Python** | Backend Development |
+| **Flask** | Web Framework |
+| **SQLite** | Database for User Authentication |
+| **TensorFlow/Keras** | Deep Learning Models |
+| **Pandas, NumPy** | Data Handling & Preprocessing |
+| **Jinja2** | HTML Templating |
+| **CSS** | Frontend Styling |
+| **Werkzeug** | Secure File Upload |
 
 ---
 
-## **📂 Project Structure**
-```
-📂 Fabric_Textile_Cloth_Defect_Detection_and_Classification
-├── 📁 Cloth_Defects_Detection           # Cloth Defect Detection Models
-├── 📄 linear_reg.ipynb                   # Simple Linear Regression
-├── 📄 Linear_reg_Multivariate.ipynb      # Multivariate Linear Regression
-├── 📄 Linear_Regression_Coorrelation.ipynb # Correlation Analysis
-├── 📄 logistic_regression.ipynb          # Logistic Regression for Classification
-├── 📄 digits_classify_logistic_regression_multiclass.ipynb # Multiclass Classification
-├── 📄 Cloth_Defect.ipynb                  # CNN Model for Image Defect Detection
-├── 📄 expo.ipynb                           # Exploratory Data Analysis (EDA)
-├── 📊 defects_data.csv                     # Dataset for Training
-├── 📊 defects_data_1.csv                   # Additional Processed Dataset
-├── 📄 .gitignore                           # Git Configuration
-└── 📄 README.md                            # Project Documentation
-```
+## **🚀 How It Works**
+1️⃣ **Data Preprocessing** – Cleans and prepares user-uploaded images.  
+2️⃣ **Model Prediction** – Uses a CNN model to classify defects (e.g., "hole," "oil spot").  
+3️⃣ **Web Interface**:
+   - Upload images for prediction.
+   - View results dynamically.
+   - Log in for personalized access.  
+4️⃣ **Feedback and Contact Forms** – Allows users to provide feedback and inquiries.
 
 ---
 
-## **🧠 How It Works?**
-1️⃣ **Data Preprocessing** – Loads datasets, cleans and normalizes data.  
-2️⃣ **Feature Selection** – Uses correlation analysis to identify useful predictors.  
-3️⃣ **Model Training** – Applies **linear regression, logistic regression, and CNN** to train models.  
-4️⃣ **Evaluation & Prediction** – Uses performance metrics (MSE, accuracy, confusion matrix) to validate models.  
-5️⃣ **Defect Detection** – The trained model detects and classifies fabric defects with high accuracy.  
-
----
-
-## **🚀 Getting Started**
-Wanna run this project? Follow these **simple** steps:
-
+## **⚡ Getting Started**
 ### **🔧 Prerequisites**
 - Python **3.7+**
-- Jupyter Notebook
+- Flask
 - TensorFlow/Keras
-- Scikit-Learn
-- Pandas, NumPy, OpenCV
+- SQLite
 
-### **⚡ Installation**
+### **📌 Installation**
 ```bash
 # Clone the repository
 git clone https://github.com/NakulLimbani/Fabric_Textile_Cloth_Defect_Detection_and_Classification.git
 
-# Navigate into the project directory
-cd Fabric_Textile_Cloth_Defect_Detection_and_Classification
+# Navigate to the project directory
+cd Fabric_Textile_Cloth_Defect_Detection_and_Classification/Cloth_Defects_Detection
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Run the Flask app
+python app.py
 ```
 
-### **🏃‍♂️ Run the Model**
-```bash
-jupyter notebook
-# Open any .ipynb file and run the cells!
-```
+### **🌐 Access the Website**
+Open your browser and visit `http://127.0.0.1:5000/` to access the application.
 
 ---
 
 ## **📊 Results & Performance**
-- **Logistic Regression Accuracy:** ✅ **90%+**
-- **CNN Model Accuracy:** 🎯 **95%+**
-- **Regression Models Performance:** 📈 **High R² Score**
-
-📉 **Sample Visuals of the Model Predictions**:
-
-<p align="center">
-  <img src="https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif" width="600"/>
-</p>
+- **Model Accuracy**:  
+  - Logistic Regression: **90%+**  
+  - CNN Model: **95%+**  
+- **Prediction Categories**:  
+  - Non-Defective, Hole, Oil Spot, Thread Error, Objects  
 
 ---
 
+## **📋 Routes**
+| Route            | Description                        |
+|-------------------|------------------------------------|
+| `/`              | Home Page                         |
+| `/login`         | User Login                        |
+| `/signup`        | User Registration                 |
+| `/predict`       | Image Upload & Defect Prediction  |
+| `/about`         | About the Project                 |
+| `/contact`       | Contact Form                      |
+| `/feedback`      | Feedback Form                     |
+
+---
 
 ## **📜 License**
-This project is licensed under the **MIT License** – free to use and modify! 🎉
+This project is licensed under the **MIT License**.
 
 ---
-
